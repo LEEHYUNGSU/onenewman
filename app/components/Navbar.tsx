@@ -8,14 +8,14 @@ import styled from "styled-components";
 const NavbarContainer = styled.div`
   width: 100vw;
   height: 5.5vh;
-  background-color: #73D674;
+  background-color: #136838;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
   display: flex;
   align-items: center;
-  padding-left: 13px;
+  padding-left: 4%;
 `;
 
 const HomeBtn = styled.div`
@@ -23,7 +23,6 @@ const HomeBtn = styled.div`
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding-top: 7px;
 `;
 

@@ -50,15 +50,15 @@ const SummaryOneBox = styled.div`
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 `;
 
 const SummaryImageSect = styled.div`
-  height: 100px;
-  aspect-ratio: 100px;
+  height: 90%;
+  width: 28vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -66,18 +66,19 @@ const SummaryImageSect = styled.div`
 `;
 
 const SummaryImage = styled(Image)`
-  width: 95px;
-  height: 95px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px;
 `;
 
 const SummaryContent = styled.div`
-  width: 205px;
+  width: 57vw;
   display: flex;
   flex-direction: column;
   height: 100%;
   position: relative;
+  padding-right: 3vw;
 `;
 
 const SummaryTop = styled.div`
@@ -115,7 +116,7 @@ const BibleBox = styled.div`
   color: white;
   position: absolute;
   bottom: 0;
-  right: -7%;
+  right: -2%;
   border-radius: 5px;
 `;
 
@@ -162,7 +163,7 @@ const BackBtn = styled.div`
 `;
 
 const OneContentBox = styled.div`
-  width: 360px;
+  width: 90vw;
   height: auto;
   border-radius: 5px;
   background-color: #f7f7f7;
@@ -191,7 +192,7 @@ const ContentBottom = styled.div`
   padding-left: 30px;
   padding-right: 30px;
   text-align: justify;
-  font-size: 14px;
+  font-size: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   letter-spacing: 1.3px;

@@ -42,5 +42,5 @@ export const NextIcon = () => {
 };
 
 export const HomeIcon = () => {
-  return <i className="fi fi-sr-home" style={{fontSize: "20px", color: '#F7ADAD'}}></i>;
+  return <i className="fi fi-sr-home" style={{fontSize: "1em", color: 'white'}}></i>;
 };

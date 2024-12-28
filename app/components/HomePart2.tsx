@@ -11,7 +11,7 @@ import Link from "next/link";
 const HomeContainer2 = styled.div`
   width: 100vw;
   height: 100px;
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,7 +39,7 @@ const SeasonText = styled.div`
   height: 40px;
   padding-top: 5px;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
 `;
 

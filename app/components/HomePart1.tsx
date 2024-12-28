@@ -15,20 +15,21 @@ const TotalContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 270px;
-  height: 270px;
-  border-radius: 5px;
+  width: 75%;
+  aspect-ratio: 1/1;
+  border-radius: 15px;
 `;
 
 const SampleImage = styled(Image)`
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   overflow: hidden;
   object-fit: cover;
 `;
 
 const SampleText = styled.div`
-  width: 270px;
+  width: 75%;
   height: 7vh;
   background-color: #F78B8B;
   border-radius: 5px;
@@ -37,19 +38,19 @@ const SampleText = styled.div`
   align-items: center;
   justify-content: center;
   color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-size: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 13px;
 `;
 
 const SampleText2 = styled.div`
-  width: 270px;
-  height: 20vh;
+  width: 75%;
+  height: 15vh;
   background-color: #fff9ba;
   border-radius: 5px;
   margin-top: 10px;
   display: flex;
-  font-size: 13px;
+  font-size: 12px;
   justify-content: center;
   align-items: center;
   color: #8b8b8b;
