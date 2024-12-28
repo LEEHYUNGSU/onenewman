@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import HomePart1 from "./components/HomePart1";

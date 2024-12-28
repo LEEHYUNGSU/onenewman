@@ -5,10 +5,7 @@ import styled from "styled-components";
 import {
   FallIcon,
   SpringIcon,
-  SummerIcon,
-  WinterIcon,
 } from "../../Icons/HomeIcons";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 const HomeContainer2 = styled.div`

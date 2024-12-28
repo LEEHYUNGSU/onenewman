@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar from "@/app/components/Navbar";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { SummaryPartData } from "@/data/summaryPart/summaryPartData";
 import Image from "next/image";
@@ -217,7 +217,9 @@ const Summary = () => {
       top: 0,          // 맨 위 위치
       behavior: "smooth", // 부드럽게 이동
     });
-  }
+  };
+
+  
 
   return (
     <>
