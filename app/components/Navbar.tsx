@@ -8,7 +8,7 @@ import styled from "styled-components";
 const NavbarContainer = styled.div`
   width: 100vw;
   height: 5.5vh;
-  background-color: #148149;
+  background-color: #73D674;
   position: fixed;
   top: 0;
   left: 0;

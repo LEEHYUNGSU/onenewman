@@ -21,9 +21,10 @@ const TotalContainer = styled.div`
 `;
 
 const UpperSect = styled.div`
-  width: 55%;
+  width: 80%;
+  margin-top: 10px;
   height: 4.5vh;
-  background-color: #e2485d;
+  background-color: #F7665E;
   border-radius: 10px;
   color: white;
   font-size: 13px;
@@ -56,8 +57,8 @@ const SummaryOneBox = styled.div`
 `;
 
 const SummaryImageSect = styled.div`
-  height: 14vh;
-  aspect-ratio: 1;
+  height: 100px;
+  aspect-ratio: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,8 +66,8 @@ const SummaryImageSect = styled.div`
 `;
 
 const SummaryImage = styled(Image)`
-  width: 100%;
-  height: 100%;
+  width: 95px;
+  height: 95px;
   object-fit: cover;
   border-radius: 10px;
 `;
@@ -94,7 +95,7 @@ const SummaryBottom = styled.div`
   width: 100%;
   height: 75%;
   display: flex;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.6;
   padding-left: 20px;
   padding-top: 10px;
@@ -102,17 +103,19 @@ const SummaryBottom = styled.div`
 `;
 
 const BibleBox = styled.div`
-  width: 13vw;
+  width: 70px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 10px;
+  font-size: 9px;
+  padding-left: 5px;
+  padding-right: 5px;
   background-color: #465474;
   color: white;
   position: absolute;
   bottom: 0;
-  right: -5%;
+  right: -7%;
   border-radius: 5px;
 `;
 
@@ -122,7 +125,7 @@ const PositionBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   color: black;
   position: absolute;
@@ -222,7 +225,7 @@ const Summary = () => {
       <TotalContainer>
         {pageNumber === 0 ? (
           <>
-            <UpperSect>절기 시리즈 개념 요약</UpperSect>
+            <UpperSect>여호와의 절기 시리즈</UpperSect>
             <DownSect>
               {SummaryPartData.map((data, idx) => (
                 <>

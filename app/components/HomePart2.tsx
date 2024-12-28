@@ -11,8 +11,7 @@ import Link from "next/link";
 const HomeContainer2 = styled.div`
   width: 100vw;
   height: 100px;
-  position: absolute;
-  bottom: 150px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

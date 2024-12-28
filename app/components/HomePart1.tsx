@@ -7,17 +7,16 @@ import styled from "styled-components";
 
 const TotalContainer = styled.div`
   width: 100vw;
-  top: 10%;
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70%;
+  height: 60vh;
+  margin-top: 10vh;
 `;
 
 const ImageContainer = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   border-radius: 5px;
 `;
 
@@ -29,24 +28,28 @@ const SampleImage = styled(Image)`
 `;
 
 const SampleText = styled.div`
-  width: 300px;
-  height: 5vh;
-  background-color: #c75a59;
+  width: 270px;
+  height: 7vh;
+  background-color: #F78B8B;
   border-radius: 5px;
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
 `;
 
 const SampleText2 = styled.div`
-  width: 300px;
+  width: 270px;
   height: 20vh;
-  background-color: #F0E675;
+  background-color: #fff9ba;
   border-radius: 5px;
   margin-top: 10px;
   display: flex;
+  font-size: 13px;
   justify-content: center;
   align-items: center;
   color: #8b8b8b;
