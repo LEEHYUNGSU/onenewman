@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const NavbarContainer = styled.div`
   width: 100vw;
-  height: 4.5vh;
+  height: 5.5vh;
   background-color: #148149;
   position: fixed;
   top: 0;

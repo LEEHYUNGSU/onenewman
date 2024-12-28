@@ -12,11 +12,12 @@ const TotalContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 70%;
 `;
 
 const ImageContainer = styled.div`
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 5px;
 `;
 
@@ -28,7 +29,7 @@ const SampleImage = styled(Image)`
 `;
 
 const SampleText = styled.div`
-  width: 350px;
+  width: 300px;
   height: 5vh;
   background-color: #c75a59;
   border-radius: 5px;
@@ -40,7 +41,7 @@ const SampleText = styled.div`
 `;
 
 const SampleText2 = styled.div`
-  width: 350px;
+  width: 300px;
   height: 20vh;
   background-color: #F0E675;
   border-radius: 5px;

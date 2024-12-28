@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { SummaryPartData } from "@/data/summaryPart/summaryPartData";
 import Image from "next/image";
-import Navbar2 from "@/app/components/Navbar2";
 import { SummaryPart1 } from "@/data/summary/summary1";
 
 const TotalContainer = styled.div`
@@ -27,7 +26,7 @@ const UpperSect = styled.div`
   background-color: #e2485d;
   border-radius: 10px;
   color: white;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,20 +43,20 @@ const DownSect = styled.div`
 `;
 
 const SummaryOneBox = styled.div`
-  width: 360px;
-  height: 15vh;
+  width: 85vw;
+  height: 16vh;
   border-radius: 10px;
   background-color: #f7f7f7;
   display: flex;
   align-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 `;
 
 const SummaryImageSect = styled.div`
-  height: 13vh;
+  height: 14vh;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
@@ -87,7 +86,7 @@ const SummaryTop = styled.div`
   padding-top: 3px;
   display: flex;
   align-items: end;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 `;
 
@@ -103,17 +102,17 @@ const SummaryBottom = styled.div`
 `;
 
 const BibleBox = styled.div`
-  width: 85px;
+  width: 13vw;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 10px;
   background-color: #465474;
   color: white;
   position: absolute;
   bottom: 0;
-  right: -30px;
+  right: -5%;
   border-radius: 5px;
 `;
 
@@ -123,7 +122,7 @@ const PositionBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: bold;
   color: black;
   position: absolute;
@@ -137,7 +136,7 @@ const BackBtnSect = styled.div`
   width: 100%;
   height: 40px;
   position: fixed;
-  top: 4.5vh;
+  top: 5.5vh;
   left: 15px;
   z-index: 100;
   background-color: inherit;
@@ -196,8 +195,6 @@ const ContentBottom = styled.div`
   line-height: 1.7;
 `;
 
-
-
 const Summary = () => {
   const [summaryData, setSummaryData] = useState(SummaryPart1);
   const [pageNumber, setPageNumber] = useState(0);
@@ -206,7 +203,7 @@ const Summary = () => {
     setPageNumber(1);
     setSummaryData(data);
     window.scrollTo({
-      top: 0,          // 맨 위 위치
+      top: 0, // 맨 위 위치
       behavior: "smooth", // 부드럽게 이동
     });
   };
@@ -214,12 +211,10 @@ const Summary = () => {
   const BackFunc = () => {
     setPageNumber(0);
     window.scrollTo({
-      top: 0,          // 맨 위 위치
+      top: 0, // 맨 위 위치
       behavior: "smooth", // 부드럽게 이동
     });
   };
-
-  
 
   return (
     <>
@@ -227,13 +222,7 @@ const Summary = () => {
       <TotalContainer>
         {pageNumber === 0 ? (
           <>
-            <UpperSect>
-              <i
-                className="fi fi-tr-cloud-sun-rain"
-                style={{ fontSize: "24px", color: "#E8D18B" }}
-              ></i>{" "}
-              &nbsp; 절기 시리즈 개념 요약
-            </UpperSect>
+            <UpperSect>절기 시리즈 개념 요약</UpperSect>
             <DownSect>
               {SummaryPartData.map((data, idx) => (
                 <>
@@ -260,24 +249,19 @@ const Summary = () => {
         {pageNumber === 1 ? (
           <DownSect>
             <BackBtnSect>
-              <BackBtn onClick={BackFunc}>
-                뒤로가기
-              </BackBtn>
+              <BackBtn onClick={BackFunc}>뒤로가기</BackBtn>
             </BackBtnSect>
             {summaryData.map((data, idx) => (
               <OneContentBox key={idx}>
                 <ContentTop>
                   {idx + 1} {data.question}
                 </ContentTop>
-                <ContentBottom>
-                  {data.answer}
-                </ContentBottom>
+                <ContentBottom>{data.answer}</ContentBottom>
               </OneContentBox>
             ))}
           </DownSect>
         ) : null}
       </TotalContainer>
-      <Navbar2 />
     </>
   );
 };
